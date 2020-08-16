@@ -4,7 +4,7 @@
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', 'php_mvc');
+define('DB_NAME', 'pct_test');
 
 // app root
 define('APP_ROOT', dirname(dirname(__FILE__)));
@@ -13,4 +13,4 @@ define('APP_ROOT', dirname(dirname(__FILE__)));
 define('URL_ROOT', '/'); // empty due to direct path configuration
 
 // site name
-define('SITE_NAME', 'php mvc');
+define('SITE_NAME', 'pct test');
