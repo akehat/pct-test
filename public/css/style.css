@@ -10,12 +10,10 @@ td {
 
 .even {
   color: blue;
-  background-color: yellow;
 }
 
 .odd {
-  color: yellow;
-  background-color: blue;
+  background-color: yellow;
 }
 
 .double-click {

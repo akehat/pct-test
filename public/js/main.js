@@ -1,9 +1,11 @@
+
 function single_action(id) {
     console.log(`${id} was single clicked`);
     let el = document.getElementById(id);
-    id++;
-    el.textContent = id;
-    if (id % 2 == 0) {
+    let value = getValue(id);
+    value++;
+    el.textContent = value;
+    if (value % 2 == 0) {
         el.classList.remove('odd');
         el.classList.add('even');
     } else {
@@ -15,16 +17,22 @@ function single_action(id) {
 function double_action(id) {
     console.log(`${id} was double clicked`);
     let el = document.getElementById(id);
-    if (id % 2 == 0) {
+    let value = getValue(id);
+    if (value % 2 == 0) {
         el.classList.remove('odd');
     } else {
         el.classList.remove('even');
     }
     $.ajax({
-        url: `/getName/${id}`, success: function (result) {
+        url: `/getName/${value}`, success: function (result) {
             console.log('result', result);
             $(`#${id}`).html(result);
         }
     });
     el.classList.add('double-click');
+}
+
+function getValue(id) {
+    let value = id.split('_');
+    return value[1];
 }

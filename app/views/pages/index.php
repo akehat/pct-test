@@ -6,8 +6,9 @@
     <tr>
       <?php for ($j = 1; $j <= $data['number']; $j++) : ?>
         <?php $result = $i * $j; ?>
-        <?php $className = ($j % 2 == 0) ? 'even' : 'odd'; ?>
-        <td class="<?php echo $className; ?>" id="<?php echo $result; ?>" onclick="single_action(<?php echo $result; ?>); return false;" ondblclick="double_action(<?php echo $result; ?>); return false;">
+        <?php $className = ($result % 2 == 0) ? 'even' : 'odd'; ?>
+        <?php $idValue = $i . '_' . $result; ?>
+        <td class="<?php echo $className; ?>" id="<?php echo $idValue; ?>" onclick='single_action(<?php echo json_encode($idValue); ?>); return false;' ondblclick='double_action(<?php echo json_encode($idValue); ?>); return false;'>
           <?php
           echo $result;
           ?>
