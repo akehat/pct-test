@@ -2,8 +2,8 @@
 
 // db params
 define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_USER', 'YOUR_USER_NAME');
+define('DB_PASS', 'YOUR_USER_PASSWORD');
 define('DB_NAME', 'pct_test');
 
 // app root

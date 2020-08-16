@@ -33,6 +33,12 @@ cd /var/www/path-to-repo/dev
 git clone git@github.com:hkovacs/pct-test.git .
 ```
 
+##### loading database:
+* set your db credentials in config/config.php
+* optional: `create database pct_test;`
+* import users.sql
+
+
 ##### local sample urls:
 * http://pct.test/3
 * http://pct.test/getName/3
