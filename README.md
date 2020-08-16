@@ -38,9 +38,15 @@ git clone git@github.com:hkovacs/pct-test.git .
 * optional: `create database pct_test;`
 * import users.sql
 
-
 ##### local sample urls:
 * http://pct.test/3
 * http://pct.test/getName/3
 
 * see live: pct-test.hkovacs.com
+
+##### secure access:
+* to access the users page, simply register and log in
+
+##### create more users:
+* to create additional users, open chrome incognito and register as many users as you like
+
