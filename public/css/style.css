@@ -1,0 +1,23 @@
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+.even {
+  color: blue;
+  background-color: yellow;
+}
+
+.odd {
+  color: yellow;
+  background-color: blue;
+}
+
+.double-click {
+  background-color: green;
+}
