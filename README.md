@@ -26,6 +26,13 @@ server {
 }
 ```
 
+##### clone repo
+```
+mkdir -p /var/www/path-to-repo/dev
+cd /var/www/path-to-repo/dev
+git clone git@github.com:hkovacs/pct-test.git .
+```
+
 ##### local sample urls:
 * http://pct.test/3
 * http://pct.test/getName/3
