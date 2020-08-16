@@ -14,6 +14,10 @@ class Core
         // print_r($this->getUrl());
         $url = $this->getUrl();
 
+        if (!isset($url[0])) {
+            return redirect('10');
+        }
+
         // look in controllers for first value
         if (file_exists('../app/controllers/' . ucwords($url[0]) . '.php')) {
             // set as controller
